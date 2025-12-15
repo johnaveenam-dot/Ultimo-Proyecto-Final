@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    font-family: 'Orbitron';
+    background-image: url('Imagenes/Fondo1.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.EncabezadoColab{
+  text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    color: white;
+  
+  
+}
+
+
+.MenuColab{
+  display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px;
+    background: rgba(0,0,0,0.75);
+
+}
+
+.MenuColab a{
+  color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.MenuColab a:hover{
+  text-decoration: underline;
+}
+
+.ContenidoColab{
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.CardAdmin{
+  width: 90%;
+  max-width: 1000px;
+  padding: 30px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.CardAdmin h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.CardAdmin form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.CardAdmin input,
+.CardAdmin textarea{
+  padding: 10px;
+  font-size: 16px;
+}
+
+.TablaAdmin{
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.TablaAdmin th,
+.TablaAdmin td{
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.BtnEditar{
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.BtnEliminar{
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.BtnAgregar{
+  margin-top: 15px;
+  padding: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.FooterColab{
+  
+  text-align: center;
+  padding: 15px;
+  color:black;
+}

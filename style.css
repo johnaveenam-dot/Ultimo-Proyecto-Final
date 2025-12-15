@@ -1,0 +1,525 @@
+
+body{
+    background-image: url('Imagenes/Fondo1.webp');
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family:'orbitron', sans-serif;
+}
+
+
+
+.Encabezado {
+    position:sticky;
+    top:0;
+    z-index: 1000;
+    background-image: url('Imagenes/Fondo1.webp');
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+
+
+.LogoContainer{
+    display:flex;
+    flex-direction:column;
+}
+.LogoTexto{
+    font-size: 70px;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(0, 0, 2);
+    margin: 0;
+}
+.Subtitulo{
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0;  
+    margin-top: -10px;
+    padding: 0px 100px;
+}
+
+
+
+.Menu button {
+    background-color: #c5cedd8b;
+    color: rgba(1, 0, 16, 0.871);
+    padding: 10px 100px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid;
+    box-shadow: 2px 2px 10px black;
+    cursor: pointer;
+    transition: 0.1s;
+    font-family:'orbitron', sans-serif;
+}
+.Menu button:hover {
+    background-color: #000106bd;  
+    color: rgb(241, 237, 237);
+}
+
+
+
+.Hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+.Herobox{
+    max-width: 900px;     
+    width: 90%;           
+    padding: 40px;        
+    text-align: center;
+
+    font-size: 25px;
+    font-style: italic;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+.Herobox h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+.HeroTexto {
+    font-size: 18px;
+}
+
+
+
+.Presentacion {
+    margin: 80px 0;
+}
+.PresentacionTexto{
+    flex: 1;
+    padding: 40px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+.PresentacionTexto h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+    text-align: center;
+    
+}
+.PresentacionTexto p{
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+}
+.ImagenPresentacion img{
+    width: 100%;
+    max-width: 2000px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+
+
+
+.Beneficios{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 25px;
+    border: 1px solid rgba(255,255,255,0.25);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+.ContainerBeneficios{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+}
+.Pregunta{
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    margin: 50px;
+    margin-top: -60px;
+}
+.Conexion{
+    font-size: 18px;
+    padding: 50px 0;
+}
+.Pregunta h2{
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.Conexion p{
+    font-style: italic;
+    margin: 0;  
+    margin-top: -20px;
+    padding: 0px 30px;
+}
+.SoporteT{
+    font-size: 18px;
+    padding: 50px 0;
+}
+.SoporteT p{
+    font-style: italic;
+    margin: 0;  
+    margin-top: -20px;
+    padding: 0px 30px;
+}
+.InstalacionT{
+    font-size: 18px;
+    padding: 50px 0;
+}
+.InstalacionT p{
+    font-style: italic;
+    margin: 0;  
+    margin-top: -20px;
+    padding: 0px 30px;
+}
+.ImagenB img{
+    flex: 1;
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+}
+
+
+
+.Somos{
+    margin: 8% auto;
+    text-align: center;
+    width: 69%;
+    padding: 18px 250px;
+    
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+.ImagenQuienesSomos img{
+    width:50%;
+    max-width: 300px;
+    margin: 5px;
+}
+.QuieneSomosTexto h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.QuieneSomosTexto p{
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.6;
+}    
+.Mision {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 92%;
+    margin: 60px auto;
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.25);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+.MisionTexto h1{
+    font-size: 35px;
+    margin-bottom: 10px;
+    
+}
+.MisionTexto p {
+    font-size: 18px;
+    font-style: italic;
+
+}
+.ImagenMision img {
+    width: 350px;
+    max-width: 90%;
+}
+
+
+
+.Vision{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 92%;
+    margin: 60px auto;
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.25);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+.ImagenVision img{
+    width: 350px;
+    max-width: 90%;
+}
+.VisionTexto h1{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.VisionTexto p{
+    font-size: 18px;
+    font-style: italic;
+}
+
+
+
+.TituloInternet {
+    padding: 30px 100px;
+    width: 85%;
+    margin: 50px auto;
+    text-align: center;
+    
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+}
+.TextoInternet p{
+    font-style: italic;
+    font-size: 20px;
+    text-align: justify;
+}
+.PlanesInternet {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 70px auto;
+    width: 90%;
+}
+.PlanVelocidad{
+    width: 50%;
+    margin: 0px auto;
+    padding: 0px 70px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    background-color: #c5cedd8b;
+    color: rgba(1, 0, 16, 0.871);
+}
+
+
+
+.Card{
+    flex: 1;
+    max-width: 320px;
+
+    padding: 40px 25px;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.Card:hover {
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.6);
+}
+.Contratar{
+    background-color: #c5cedd8b;
+    color: rgba(1, 0, 16, 0.871);
+    padding: 10px 60px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid;
+    box-shadow: 2px 2px 10px black;
+    cursor: pointer;
+    transition: 0.1s;
+    font-family:'orbitron', sans-serif;
+}
+.Contratar:hover{
+    background-color: #00000124;  
+    color: rgba(255, 255, 255, 0.998);
+}
+
+
+
+.TituloCable {
+    padding: 30px 100px;
+    width: 85%;
+    margin: 50px auto;
+    text-align: center;
+    
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+}
+.TextoCable p{
+    font-style: italic;
+    font-size: 20px;
+    text-align: justify;
+}
+.PlanesCable {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 70px auto;
+    width: 90%;
+}
+
+
+
+.formulario{
+    width: 50%;
+    margin: 100px auto;
+    padding: 40px;
+    
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 20px;
+}
+.TituloPlan h3 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+
+    padding: 12px;
+    border-radius: 10px;
+
+    background-color: #c5cedd8b;
+    box-shadow: 2px 2px 10px black;
+}
+.controls {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.35);
+    background: rgba(255,255,255,0.45);
+}
+.botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.botones button {
+    background-color: #c5cedd8b;
+    color: rgba(1, 0, 16, 0.871);
+    padding: 10px 100px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid;
+    box-shadow: 2px 2px 10px black;
+    cursor: pointer;
+    transition: 0.1s;
+    font-family:'orbitron', sans-serif;
+}
+.botones button:hover{
+    background-color: #000106bd;  
+    color: rgb(241, 237, 237);
+}
+
+
+
+.Contactenos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 80px auto;
+    padding: 50px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    border: 1px solid rgba(255,255,255,0.25);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+}
+.ContainerContactenos{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.PreguntaQuien{
+    font-size: 32px;
+    text-align: left;
+}
+.Telefono{
+    font-size: 18px;
+    padding: 25px 0;
+}
+.Telefono p{
+    font-size: 18px;
+    font-style: italic;
+    margin: 0;
+}
+.Celular{
+    font-size: 18px;
+    padding: 25px 0;
+}
+.Celular p{
+    font-size: 18px;
+    font-style: italic;
+    margin: 0;
+}
+.Ubicacion{
+    font-size: 18px;
+    padding: 25px 0;
+}
+.Ubicacion p{
+    font-size: 18px;
+    font-style: italic;
+    margin: 0;
+}
+.ImagenQuien img{
+    width: 100%;
+    max-width: 350px;
+}
+
+
+
+.FooterContainer{
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+
