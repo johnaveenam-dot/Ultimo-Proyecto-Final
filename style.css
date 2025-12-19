@@ -1,6 +1,6 @@
 
 body{
-    background-image: url('Imagenes/Fondo1.webp');
+    background-image: url('Imagenes/dragon-ball.webp');
         background-size: cover;
         background-position: bottom;
         background-repeat: no-repeat;
@@ -14,18 +14,23 @@ body{
     position:sticky;
     top:0;
     z-index: 1000;
-    background-image: url('Imagenes/Fondo1.webp');
-        background-size: cover;
-        background-position: bottom;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        
+    
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.HeaderContainer{
+    max-width: 1400px;      
+    width: 90%;            
+    margin: 0 auto;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
-}
 
+    padding: 15px 0;
+}
 
 
 .LogoContainer{
@@ -48,14 +53,24 @@ body{
     padding: 0px 100px;
 }
 
+.Menu{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: nowrap;   
+}
 
 
 .Menu button {
+    min-width:160px;
+    text-align: center;
+
+
     background-color: #c5cedd8b;
     color: rgba(1, 0, 16, 0.871);
-    padding: 10px 100px;
     font-weight: bold;
     font-size: 16px;
+
     border-radius: 10px;
     border: 2px solid;
     box-shadow: 2px 2px 10px black;
@@ -75,7 +90,13 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 80vh;
+    padding: 80px 20px; 
+    
+    border: 1px solid rgba(255,255,255,0.25);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    
 }
+
 .Herobox{
     max-width: 900px;     
     width: 90%;           
@@ -85,35 +106,26 @@ body{
     font-size: 25px;
     font-style: italic;
 
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    
 }
 .Herobox h1 {
-    font-size: 42px;
+    font-size: 40px;
     margin-bottom: 15px;
 }
 .HeroTexto {
-    font-size: 18px;
+    font-size: 24px;
 }
 
 
 
 .Presentacion {
     margin: 80px 0;
+    border: 1px solid rgba(255,255,255,0.25);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
 }
 .PresentacionTexto{
     flex: 1;
     padding: 40px;
-
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-
-    border-radius: 20px;
-    box-shadow: 2px 2px 10px rgb(0, 0, 0);
 }
 .PresentacionTexto h1{
     font-size: 40px;
@@ -122,15 +134,17 @@ body{
     
 }
 .PresentacionTexto p{
-    font-size: 18px;
+    font-size: 24px;
     font-style: italic;
     text-align: center;
 }
 .ImagenPresentacion img{
     width: 100%;
     max-width: 2000px;
-    border-radius: 25px;
+
+    border: 1px solid rgba(255,255,255,0.25);
     box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    
 }
 
 
@@ -140,16 +154,7 @@ body{
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-
-    width: 90%;
-    max-width: 1200px;
-    margin: 60px auto;
-    padding: 40px;
-
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    border-radius: 25px;
+    
     border: 1px solid rgba(255,255,255,0.25);
     box-shadow: 2px 2px 10px rgb(0, 0, 0);
 }
@@ -167,8 +172,8 @@ body{
     justify-content: space-between;
     align-items: center;
     width:100%;
-    margin: 50px;
-    margin-top: -60px;
+    margin: 10px;
+    margin-top: 60px;
 }
 .Conexion{
     font-size: 18px;
@@ -217,13 +222,14 @@ body{
 .Somos{
     margin: 8% auto;
     text-align: center;
-    width: 69%;
-    padding: 18px 250px;
+    gap: 20px;
+
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
     
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.25);
     box-shadow: 2px 2px 10px rgb(0, 0, 0);
 }
 .ImagenQuienesSomos img{
@@ -237,31 +243,30 @@ body{
 }
 .QuieneSomosTexto p{
     font-style: italic;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 1.6;
 }    
 .Mision {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
-    width: 92%;
-    margin: 60px auto;
-    padding: 30px;
+    gap: 20px;
 
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+
     border: 1px solid rgba(255,255,255,0.25);
     box-shadow: 2px 2px 10px rgb(0, 0, 0);
 }
 .MisionTexto h1{
-    font-size: 35px;
+    font-size: 40px;
     margin-bottom: 10px;
     
 }
 .MisionTexto p {
-    font-size: 18px;
+    font-size: 24px;
     font-style: italic;
 
 }
@@ -276,14 +281,13 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
-    width: 92%;
-    margin: 60px auto;
-    padding: 30px;
+    gap: 20px;
 
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
+width: 90%;
+max-width: 1200px;
+margin: 60px auto;
+padding: 20px;
+
     border: 1px solid rgba(255,255,255,0.25);
     box-shadow: 2px 2px 10px rgb(0, 0, 0);
 }
@@ -292,31 +296,31 @@ body{
     max-width: 90%;
 }
 .VisionTexto h1{
-    font-size: 35px;
+    font-size: 40px;
     margin-bottom: 10px;
 }
 .VisionTexto p{
-    font-size: 18px;
+    font-size: 24px;
     font-style: italic;
 }
 
 
 
 .TituloInternet {
-    padding: 30px 100px;
-    width: 85%;
+    width: 90%;
+    max-width: 1200px;   
     margin: 50px auto;
+
+    padding: 30px 40px; 
     text-align: center;
     
-    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.25);
     box-shadow: 2px 2px 10px rgb(0, 0, 0);
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
 }
 .TextoInternet p{
     font-style: italic;
-    font-size: 20px;
-    text-align: justify;
+    font-size: 24px;
+    text-align: center;
 }
 .PlanesInternet {
     display: flex;
@@ -330,9 +334,8 @@ body{
     margin: 0px auto;
     padding: 0px 70px;
     border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.25);
     box-shadow: 2px 2px 10px rgb(0, 0, 0);
-    background-color: #c5cedd8b;
-    color: rgba(1, 0, 16, 0.871);
 }
 
 
@@ -344,12 +347,11 @@ body{
     padding: 40px 25px;
     text-align: center;
 
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.25);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    transition: transform 0.3s, box-shadow 0.3s;
     border-radius: 20px;
 
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
-    transition: transform 0.3s, box-shadow 0.3s;
 }
 .Card:hover {
     box-shadow: 2px 2px 20px rgba(0,0,0,0.6);
@@ -375,15 +377,19 @@ body{
 
 
 .TituloCable {
-    padding: 30px 100px;
-    width: 85%;
+    width: 90%;
+    max-width: 1200px;   
     margin: 50px auto;
+
+    padding: 30px 40px; 
     text-align: center;
-    
+
     border-radius: 20px;
+    
+    border: 1px solid rgba(255,255,255,0.25);
     box-shadow: 2px 2px 10px rgb(0, 0, 0);
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
+    transition: transform 0.3s, box-shadow 0.3s;
+    
 }
 .TextoCable p{
     font-style: italic;
@@ -404,14 +410,11 @@ body{
     width: 50%;
     margin: 100px auto;
     padding: 40px;
+    border-radius: 20px;
     
 
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
     border: 1px solid rgba(255,255,255,0.25);
-    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
 }
 .TituloPlan h3 {
     text-align: center;
@@ -467,10 +470,8 @@ body{
     margin: 80px auto;
     padding: 50px;
 
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(15px);
-    border-radius: 25px;
     border: 1px solid rgba(255,255,255,0.25);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
     box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
 }
 .ContainerContactenos{
@@ -520,6 +521,10 @@ body{
     text-align: center;
     font-size: 14px;
     opacity: 0.85;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 15px;
 }
+
 
 
